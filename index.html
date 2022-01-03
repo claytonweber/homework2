@@ -7,17 +7,23 @@
   <title>Clayton Weber Portfolio</title>
   <link rel="stylesheet" href="/assets/reset.css">
   <link rel="stylesheet" href="/assets/style.css">
+  
 </head>
 <body>
   <header>
     <nav>
       <h2>Clayton Weber</h2>
       <ul class="nav-links">
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
-        <li>Resume</li>
+        <li class="menu"><a href="#about">About</a></li>
+        <li class="menu"><a href="#work">Work</a></li>
+        <li class="menu"><a href="#contact">Contact</a></li>
+        <li class="menu"><a href="#resume">Resume</a></li>
       </ul>
+      <div class="mobile-menu">
+        <span class="menu-icon open">&#x2261;</span>
+        <span class="menu-icon close">&#x2715;</span>
+      </div>
+
     </nav>
   </header>
 
@@ -48,34 +54,36 @@
         <div class="work-card">
           
           <div class="project" id="project1">
-            <h3>Project 1</h3> <br><br>
+            <a href="#project-1"><h3>Project 1</h3></a> <br><br>
             <p>info</p>
           </div>
 
           <div class="project" id="project2">
-            <h3>Project 2</h3>
+            <a href="#project-2"><h3>Project 2</h3></a>
             <p>info</p>
           </div>
 
           <div class="project" id="project3">
-            <h3>Project 3</h3>
+            <a href="#project-3"><h3>Project 3</h3></a>
             <p>info</p>
           </div>
 
           <div class="project" id="project4">
-            <h3>Project 4</h3>
+            <a href="#project-4"><h3>Project 4</h3></a>
             <p>info</p>
           </div>
 
           <div class="project" id="project5">
-            <h3>Project 5</h3>
+            <a href="#project-5"><h3>Project 5</h3></a>
             <p>info</p>
           </div>
 
           
         </div>
       </div>
-    </section>
+    </section> <!-- end work section-->
+
+
 
     <section id="contact">
       <div class="container" id="contact-container">
@@ -83,13 +91,32 @@
           <h2>Contact</h2>
         </div>
         <div class="card-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sed, voluptatibus magnam dolorum quis odio et est reprehenderit numquam doloremque nulla vero dolores id veritatis, cum consectetur vitae repudiandae animi.
-          <br><br>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, fugit excepturi recusandae necessitatibus esse minima obcaecati eligendi iste, perspiciatis voluptatem consequuntur ipsa impedit cumque enim exercitationem modi velit consequatur blanditiis.
-          </p>
+          <div class="phone">
+            <h3>Phone Number</h3> <br>
+            <h3>615-969-2446</h3>
+          </div>
+
+          <div class="email">
+            <h3>Email</h3> <br>
+            <h3>claytronweber@gmail.com</h3>
+          </div>
+
+          <div class="github">
+            <h3>Github</h3> <br>
+            <a href="#github"><h3>github.com/claytonweber</h3></a>
+          </div>
+
+          <div class="linkedin">
+            <h3>LinkedIn</h3> <br>
+            <a href="#linkedin"><h3>linkedin.com/in/claytonweberr</h3></a>
+          </div>
         </div>
       </div>
     </section>
+
+
+
+
 
     <section id="resume">
       <div class="container" id="resume-container">
@@ -97,10 +124,9 @@
           <h2>Resume</h2>
         </div>
         <div class="card-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sed, voluptatibus magnam dolorum quis odio et est reprehenderit numquam doloremque nulla vero dolores id veritatis, cum consectetur vitae repudiandae animi.
-          <br><br>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, fugit excepturi recusandae necessitatibus esse minima obcaecati eligendi iste, perspiciatis voluptatem consequuntur ipsa impedit cumque enim exercitationem modi velit consequatur blanditiis.
-          </p>
+          <div>
+            <a href="#resume"><h2>Download My Resume</h2></a>
+          </div>
         </div>
       </div>
     </section>
@@ -110,4 +136,6 @@
 
 
 </body>
+
+<script src="index.js"></script>
 </html>
